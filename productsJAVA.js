@@ -9,13 +9,13 @@ function openModal(productId) {
     // Update content berdasarkan ID produk
     if (productId === 'product1') {
         image.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc0w7w9UpXzfM8yis330O4ZWRnjLvOtx8Aq0Cn2I6O0dog63AEuD0qg_OOi-E5F7q0LG14lhXvkkuuvzZunm9P5GU09QkinpQrb_2eaG44EuQJ_YqzouIhgE_34NyAeQr6SDN2iCa02EvuF-CFEmJOTGp2Mh9PeGLkBoQwL1qHdn6BpgbLGbNEAOL5DrRt/s320/1000006711.jpg';
-        name.textContent = 'Nama Produk 1';
+        name.textContent = 'Lemari Pakaian';
         size.textContent = '100x50x30 cm';
         price.textContent = 'Rp 1.500.000';
         file3D.href = '<iframe src="https://3dwarehouse.sketchup.com/embed/74c1d996-8d90-480a-9177-c265b2b2c3d6?token=bdXlBWMGgWM=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>';  // Ganti dengan URL file 3D produk
     } else if (productId === 'product2') {
         image.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggaWn37Iikm1krr32hKvwUD4dy8zZU9soKYL3sCII7XcEVkLAskPDdngvs4BfKni3Bkm90F0zt9ebiP9UMEaA28GvUN_e3ziooqLYnZj-rm2qYqABTray7wj4pNplydzW6W2hbs36KiSbNpYpBcltWkx_dAVtxspd3ieDs9yPhO5g-UprJbd0IYkUnxkRS/s320/1000006545.jpg';
-        name.textContent = 'Nama Produk 2';
+        name.textContent = 'Etalase HP';
         size.textContent = '120x60x40 cm';
         price.textContent = 'Rp 2.000.000';
         file3D.href = 'product2_3d_file_url';  // Ganti dengan URL file 3D produk
