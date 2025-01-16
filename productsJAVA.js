@@ -12,7 +12,7 @@ function openModal(productId) {
         name.textContent = 'Nama Produk 1';
         size.textContent = '100x50x30 cm';
         price.textContent = 'Rp 1.500.000';
-        file3D.href = 'product1_3d_file_url';  // Ganti dengan URL file 3D produk
+        file3D.href = '<iframe src="https://3dwarehouse.sketchup.com/embed/74c1d996-8d90-480a-9177-c265b2b2c3d6?token=bdXlBWMGgWM=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>';  // Ganti dengan URL file 3D produk
     } else if (productId === 'product2') {
         image.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggaWn37Iikm1krr32hKvwUD4dy8zZU9soKYL3sCII7XcEVkLAskPDdngvs4BfKni3Bkm90F0zt9ebiP9UMEaA28GvUN_e3ziooqLYnZj-rm2qYqABTray7wj4pNplydzW6W2hbs36KiSbNpYpBcltWkx_dAVtxspd3ieDs9yPhO5g-UprJbd0IYkUnxkRS/s320/1000006545.jpg';
         name.textContent = 'Nama Produk 2';
