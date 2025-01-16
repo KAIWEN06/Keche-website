@@ -15,7 +15,7 @@ function openModal(productId) {
         file3D.href = 'https://3dwarehouse.sketchup.com/model/7fed19cb-6d61-4dbd-8529-bd945c497596/3D';  // Ganti dengan URL file 3D produk
     } else if (productId === 'product2') {
         image.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggaWn37Iikm1krr32hKvwUD4dy8zZU9soKYL3sCII7XcEVkLAskPDdngvs4BfKni3Bkm90F0zt9ebiP9UMEaA28GvUN_e3ziooqLYnZj-rm2qYqABTray7wj4pNplydzW6W2hbs36KiSbNpYpBcltWkx_dAVtxspd3ieDs9yPhO5g-UprJbd0IYkUnxkRS/s320/1000006545.jpg';
-        name.textContent = 'Nama Produk 2';
+        name.textContent = 'Etalase HP';
         size.textContent = '120x60x40 cm';
         price.textContent = 'Rp 2.000.000';
         file3D.href = 'product2_3d_file_url';  // Ganti dengan URL file 3D produk
