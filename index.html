@@ -1,91 +1,246 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeChe Custom Furniture</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulang Tahun Bro Intergalaksi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(to top, #000000, #0f0f0f);
+            color: #00ffcc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            transition: background 0.2s;
+        }
+
+        .glitch-bg {
+            animation: glitchBg 0.1s infinite;
+        }
+
+        @keyframes glitchBg {
+            0% {
+                background: #000;
+            }
+
+            50% {
+                background: red;
+            }
+
+            100% {
+                background: #000;
+            }
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px dashed #00ffcc;
+            border-radius: 20px;
+            box-shadow: 0 0 30px #00ffff;
+        }
+
+        .photo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 5px solid #00ffcc;
+            box-shadow: 0 0 20px #00ffff;
+            animation: spin 8s linear infinite;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ffcc;
+        }
+
+        .typed-text {
+            font-size: 1.1rem;
+            color: #c0fefe;
+            white-space: pre-wrap;
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 400px;
+            min-height: 60px;
+        }
+
+        .space-emoji {
+            position: absolute;
+            font-size: 2.5rem;
+            cursor: pointer;
+            animation: floatUp 10s infinite linear;
+        }
+
+        .space-emoji:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .space-emoji:nth-child(2) {
+            left: 50%;
+            animation-delay: 3s;
+        }
+
+        .space-emoji:nth-child(3) {
+            left: 80%;
+            animation-delay: 6s;
+        }
+
+        button {
+            background-color: #00ffcc;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        @keyframes floatUp {
+            0% {
+                top: 100vh;
+                transform: rotate(0deg);
+            }
+
+            100% {
+                top: -10vh;
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .glitch {
+            animation: glitchText 0.1s infinite;
+            color: red;
+        }
+
+        @keyframes glitchText {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(2px, -2px);
+            }
+
+            60% {
+                transform: translate(-1px, 1px);
+            }
+
+            80% {
+                transform: translate(1px, -1px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>KeChe Custom Furniture</h1>
-        <nav>
-            <ul>
-                <li><a href="products.html">Produk</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Floating Emojis -->
+    <div class="space-emoji" onclick="popupAlien()">🚀</div>
+    <div class="space-emoji" onclick="popupAlien()">👽</div>
+    <div class="space-emoji" onclick="popupAlien()">🛸</div>
 
-    <div class="gallery">
-        <!-- Gambar 1 -->
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibYQypC1Ey-nLJ8CTK3vZx6bhWWAyy3sukJpCL1YGkfS4Hq6w9_drzLWgXK-zGz6Bt9bPTBlifKPZZ8zvMSGm5xBpYzbYJBkXjKr77byZ9684nmZJtyj3AVnyjmfzrQaWMwJDLDsKgSLr9ZNKOZc_UypZz8iteL7rUT3KIxHDdv2VfMzTvN3JsS5xXa_BJ/s736/1000006784.jpg">
-          <img alt="Img1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibYQypC1Ey-nLJ8CTK3vZx6bhWWAyy3sukJpCL1YGkfS4Hq6w9_drzLWgXK-zGz6Bt9bPTBlifKPZZ8zvMSGm5xBpYzbYJBkXjKr77byZ9684nmZJtyj3AVnyjmfzrQaWMwJDLDsKgSLr9ZNKOZc_UypZz8iteL7rUT3KIxHDdv2VfMzTvN3JsS5xXa_BJ/w200-h200/1000006784.jpg" />
-        </a>
-    
-        <!-- Gambar 2 -->
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhO-jNVNeYkkdaQiIU4zbAG9aAXbloA3t6-qwkkUt9A6oTcoK1f3aj-2g870pcvr5QtCk4cUuJgqU6He9Qxu0XXywe30avSVJiaKcvOFVG8ziZLWEkrVSMl13hD-KQL3nuxn7Au-76OMz721fpS2fvfKp1-9479s99HPT6lLbrqomreetrYThFm7bSPxAg/s885/1000006786.jpg">
-          <img alt="Img2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhO-jNVNeYkkdaQiIU4zbAG9aAXbloA3t6-qwkkUt9A6oTcoK1f3aj-2g870pcvr5QtCk4cUuJgqU6He9Qxu0XXywe30avSVJiaKcvOFVG8ziZLWEkrVSMl13hD-KQL3nuxn7Au-76OMz721fpS2fvfKp1-9479s99HPT6lLbrqomreetrYThFm7bSPxAg/w166-h200/1000006786.jpg" />
-        </a>
-    
-        <!-- Gambar 3 -->
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKyc_TY7fxRy-b5RrFMtD3w6A0D2Hr9e4IjwPpAOsi7LAU8du6EI0i9NK1hPoBkTLmM4lf6eeYb0ddC7yifawI5jRw8rLY2AD_KZWHn-b9CUZryM9kZ0P0HlG0iDYRi9GoJ-gQ9Nrw634mZ0qQyODUxfeyPsbM3xdpayMBJn4lz0sA_Fw-Y9pniLUaCt97/s1422/1000006796.jpg">
-          <img alt="Img3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKyc_TY7fxRy-b5RrFMtD3w6A0D2Hr9e4IjwPpAOsi7LAU8du6EI0i9NK1hPoBkTLmM4lf6eeYb0ddC7yifawI5jRw8rLY2AD_KZWHn-b9CUZryM9kZ0P0HlG0iDYRi9GoJ-gQ9Nrw634mZ0qQyODUxfeyPsbM3xdpayMBJn4lz0sA_Fw-Y9pniLUaCt97/s1422/1000006796.jpg" />
-        </a>
-      </div>
+    <div class="container">
+        <div class="photo">
+            <img src="foto-ultah.jpg" alt="Foto Ulang Tahun">
+        </div>
+        <h1 id="judul">SELAMAT ULANG TAHUN YURUN! 🎂</h1>
+        <div class="typed-text" id="typed-text"></div>
+        <button onclick="playMusic()">▶️ PLAY MUSIC</button>
+    </div>
 
-    <section id="about">
-        <h2>Tentang Kami</h2>
-        <p>KeChe Furniture adalah usaha yang bergerak di bidang produksi mebel custom berkualitas tinggi. Kami menawarkan solusi furnitur yang dirancang khusus untuk memenuhi kebutuhan dan selera pelanggan. Dengan mengedepankan kreativitas, keahlian, dan material terbaik, KeChe Furniture siap menciptakan produk yang tidak hanya fungsional tetapi juga estetik.</p>
-    </section>
+    <!-- Audio -->
+    <audio id="bg-music" src="https://cdn.pixabay.com/audio/2023/06/26/audio_2c42cd6a27.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="https://freesound.org/data/previews/331/331912_3248244-lq.mp3" preload="auto"></audio>
 
-    <section id="vision">
-        <h2>Visi</h2>
-        <p>Menjadi produsen mebel custom terpercaya yang menghadirkan inovasi dan kenyamanan dalam setiap desain.</p>
-    </section>
+    <script>
+        const text = `"Salam dari alien di galaksi 13! maaf terlambat perlu waktu 10 hari baru pesan ini sampai ke bumi\n\nSemoga hidup angko makin baik, sehat2 umur long, dan makin KEREN KECEH BADAI. 🚀✨"`;
+        let i = 0;
+        const speed = 40;
 
-    <section id="mission">
-        <h2>Misi</h2>
-        <ul>
-            <li>Memberikan pelayanan terbaik dengan desain yang sesuai kebutuhan pelanggan.</li>
-            <li>Menggunakan material berkualitas untuk memastikan produk tahan lama dan berkelas.</li>
-            <li>Mengembangkan inovasi dalam desain mebel yang unik dan modern.</li>
-            <li>Mendukung keberlanjutan lingkungan dengan menggunakan bahan ramah lingkungan.</li>
-        </ul>
-    </section>
+        function typeText() {
+            if (i < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(i);
+                i++;
+                setTimeout(typeText, speed);
+            }
+        }
 
-    <section id="services">
-        <h2>Layanan yang Ditawarkan</h2>
-        <ul>
-            <li>Produksi mebel custom untuk rumah, kantor, dan ruang komersial.</li>
-            <li>Konsultasi desain interior dan furnitur.</li>
-            <li>Renovasi dan modifikasi furnitur lama.</li>
-            <li>Pengiriman dan instalasi di lokasi pelanggan.</li>
-        </ul>
-    </section>
+        function playMusic() {
+            document.getElementById("bg-music").play();
+            document.getElementById("click-sound").play();
+            startFakeHack();
+        }
 
-    <section id="advantages">
-        <h2>Keunggulan KeChe Furniture</h2>
-        <ul>
-            <li>PKustomisasi Penuh: Setiap produk dirancang khusus sesuai kebutuhan pelanggan.</li>
-            <li>Kualitas Terjamin: Menggunakan bahan-bahan terbaik dengan pengerjaan profesional.</li>
-            <li>Desain Unik: Menghadirkan produk yang eksklusif dan estetis.</li>
-            <li>Pelayanan Profesional: Tim yang berpengalaman siap memberikan solusi terbaik.</li>
-        </ul>
-    </section>
+        function popupAlien() {
+            alert("👽: 'Selamat ulang tahun, BNG YURUN!");
+        }
 
-    <section id="target-market">
-        <h2>Target Pasar</h2>
-        <p>KeChe Furniture melayani berbagai segmen pasar, termasuk:</p>
-        <ul>
-            <li>Pemilik rumah yang ingin menciptakan furnitur unik sesuai kebutuhan.</li>
-            <li>Perusahaan atau kantor yang membutuhkan desain furnitur khusus.</li>
-            <li>Hotel, restoran, dan kafe yang mengutamakan estetika interior.</li>
-        </ul>
-    </section>
+        function startFakeHack() {
+            setTimeout(() => {
+                let countdown = 5;
+                const prankInterval = setInterval(() => {
+                    if (countdown > 0) {
+                        alert(`⚠️ WARNING: your system will be hacked in ${countdown} second!`);
+                        countdown--;
+                    } else {
+                        clearInterval(prankInterval);
+                        document.body.classList.add("glitch-bg");
+                        document.getElementById("judul").classList.add("glitch");
+                        document.getElementById("typed-text").classList.add("glitch");
 
-    <footer>
-        <p>&copy; 2025 KeChe Custom Furniture. All Rights Reserved.</p>
-    </footer>
+                        setTimeout(() => {
+                            alert("💥 SYSTEM HACKED... (ngga ding 😎)\nSELAMAT ULANG TAHUN BNG YURUN 🎉🎉");
+                            document.body.classList.remove("glitch-bg");
+                            document.getElementById("judul").classList.remove("glitch");
+                            document.getElementById("typed-text").classList.remove("glitch");
+                        }, 3000);
+                    }
+                }, 1000);
+            }, 3000);
+        }
+
+        window.onload = typeText;
+    </script>
 </body>
+
 </html>
